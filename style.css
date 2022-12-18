@@ -133,11 +133,12 @@ footer h2 {
     background-repeat: no-repeat;
 }
 
-.bg-glass {background-image: url('/assets/negroni-glass-faded.jpg') }
-.bg-window {background-image: url('/assets/negroni-2.jpg') }
-.bg-plant {background-image: url('/assets/negroni-4.jpg') }
-.bg-water {background-image: url('/assets/water-light.jpg') }
+.bg-glass   { background-image: url('/assets/negroni-glass-faded.jpg') }
+.bg-window  { background-image: url('/assets/negroni-2.jpg') }
+.bg-plant   { background-image: url('/assets/negroni-4.jpg') }
+.bg-water   { background-image: url('/assets/water-light.jpg') }
 
+.bg-map { background-image: url('/assets/map.png');}
 
 /* Gridlex SM  */
 @media(max-width: 48em) {
@@ -155,4 +156,100 @@ footer h2 {
 @media(max-width: 25em) {
     h1 { font-size: 4.5rem; }
     h1 span { font-size: 1.5rem; }  
+}
+
+/* gallery & slideshow */
+.gallery [class*="col-"] {
+    padding: .5%;
+  }
+
+.slider-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background-color: #183039;
+}
+
+.slider-menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+}
+
+.slider-menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: rgb(47,94,112);
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+
+.slider-menu label:hover,
+.slider-menu label:focus {
+    background: rgb(24,48,57, .6);
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 02 0.55s;
+    color: transparent;
+}
+
+[id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+    background-color:#183039;
+  }
+  
+  input[type="radio" i] {
+    display: none;
+}
+
+.slide-1 {
+    background-image: url('/assets/negroni-drink-seat.webp');
+    max-width: 100%;
+}
+.slide-2 {
+    background-image: url('/assets/negroni-drinks-table.webp');
+    background-position: 50% 76%;
+    max-width: 100%;
+}
+.slide-3 {
+    background-image: url('/assets/negroni-tapas.webp');
+    max-width: 100%;
+}
+.slide-4 {
+    background-image: url('/assets/negroni-tapas-bar.webp');
+    max-width: 100%;
+}
+.slide-5 {
+    background-image: url('/assets/negroni-preparing-drink-2.webp');
+    max-width: 100%;
+}
+.slide-6 {
+    background-image: url('/assets/negroni-preparing-drink-3.webp');
+    max-width: 100%;
+}
+.slide-7 {
+    background-image: url('/assets/negroni-holding-drink.webp'); 
+    max-width: 100%;
+}
+.slide-8 {
+    background-image: url('/assets/negroni-tapas-2.webp');
+    max-width: 100%;
 }
