@@ -15,6 +15,7 @@
 .tall-70 { min-height: 70vh; }
 .tall-80 { min-height: 80vh; }
 .tall-90 { min-height: 90vh; }
+.tall-100 { min-height: 100vh; }
 
 .padded    { padding: 5%;   }
 .padded-1  { padding: 1rem; }
@@ -139,6 +140,24 @@ footer h2 {
 .bg-water   { background-image: url('/assets/water-light.jpg') }
 
 .bg-map { background-image: url('/assets/map.png');}
+
+/* explore page */
+
+.explore-page h1 {
+    margin-bottom: 1rem;
+}
+
+.explore-page a {
+    display: block;
+    padding: 0.5rem;
+    border: 1px solid;
+    margin-bottom: 0.5rem;
+}
+
+.explore-page .featured {
+    background-color: tan;
+    color: #24282B;
+}
 
 /* Gridlex SM  */
 @media(max-width: 48em) {
